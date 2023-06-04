@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vite App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div id="app" class="container mt-5">
+    <h2>検索フォーム</h2>
+    <p>
+      <input type="text" v-model="keyword" class="form-control">
+    </p>
+    <p>{{ message }}</p>
+    <h1>一覧画面</h1>
+    <ul class="list-group list-group-numbered">
+      <li v-for="item in items" class="list-group-item">
+        <a :href="item.url" target="_blank">
+          {{ item.title }}
+        </a>
+        <span class="btn btn-primary ml-3"> いいね！: {{ item.likes_count }}</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Vue3の読み込み -->
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <!-- axioの読み込み -->
+  <script src="https://unpkg.com/axios@0.21.1/dist/axios.js"></script>
+  <!-- lodashの読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.js">
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

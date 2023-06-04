@@ -1,0 +1,30 @@
+{
+  "git.ignoreLimitWarning": true,
+  "[html]": {
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>?",
+    "editor.defaultFormatter": "HookyQR.beautify",
+    // "editor.wrappingIndent": "none"
+  },
+  "[scss]": {
+      "editor.wordSeparators": ".`~!$%^&*()=+[{]}|;:'\",<>/?",
+      "editor.defaultFormatter": "HookyQR.beautify"
+      // "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>?",
+      "editor.defaultFormatter": "HookyQR.beautify"
+      // "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+  },
+  "[php]": {
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.formatOnSave": false
+  },
+  "[ejs]": {
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    // "editor.formatOnSave": false
+    "editor.formatOnSave": true
+  }
+}
